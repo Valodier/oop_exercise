@@ -29,6 +29,6 @@ class Task
     elsif @complete = false
       @complete = true
     end
-    puts "Tasks Toggled"
+    puts "Task Toggled"
   end
 end
