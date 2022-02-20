@@ -1,8 +1,13 @@
 class Task
   
-  def initialize(name)
+  def initialize(name,number)
     @name = name
     @complete = false
+    @priority = number
+  end
+
+  def priority
+    @priority
   end
 
   def name
@@ -15,5 +20,15 @@ class Task
 
   def complete!
     @complete = true
+    puts "#{@name} completed!"
+  end
+
+  def toggle_complete!
+    if @complete = true
+      @complete = false
+    elsif @complete = false
+      @complete = true
+    end
+    puts "Tasks Toggled"
   end
 end
